@@ -49,32 +49,32 @@ struct FileLogger {
 	}
 
 	func debug(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.debug(message: message, even)
+		//consoleEcho.debug(message: message, even)
 		filelog(priority: even ? "[DEBUG]" : "[DEBUG]", message, eventid, logFile, even)
 	}
 
 	func info(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.info(message: message, even)
+		//consoleEcho.info(message: message, even)
 		filelog(priority: even ? "[INFO] " : "[INFO]", message, eventid, logFile, even)
 	}
 
 	func warning(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.warning(message: message, even)
+		//consoleEcho.warning(message: message, even)
 		filelog(priority: even ? "[WARN] " : "[WARNING]", message, eventid, logFile, even)
 	}
 
 	func error(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.error(message: message, even)
+		//consoleEcho.error(message: message, even)
 		filelog(priority: even ? "[ERROR]" : "[ERROR]", message, eventid, logFile, even)
 	}
 
 	func critical(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.critical(message: message, even)
+		//consoleEcho.critical(message: message, even)
 		filelog(priority: even ? "[CRIT] " : "[CRITICAL]", message, eventid, logFile, even)
 	}
 
 	func terminal(message: String, _ eventid: String, _ logFile: String, _ even: Bool) {
-		// consoleEcho.terminal(message: message, even)
+		//consoleEcho.terminal(message: message, even)
 		filelog(priority: even ? "[EMERG]" : "[EMERG]", message, eventid, logFile, even)
 	}
 }
